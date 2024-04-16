@@ -24,11 +24,6 @@ public class PlayerController : MonoBehaviour
             Instantiate(projectile, transform.position, projectile.transform.rotation);
         }
         
-        
-        
-        
-        
-        
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
 

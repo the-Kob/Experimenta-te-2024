@@ -6,11 +6,6 @@ public class DestroyBounds : MonoBehaviour
 {
     public float topBound = 30.0f;
     public float lowerBound = -10.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -23,6 +18,5 @@ public class DestroyBounds : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
 }
