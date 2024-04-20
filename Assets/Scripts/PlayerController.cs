@@ -37,4 +37,13 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Animal")
+        {
+            Debug.Log("Game Over!");
+            Destroy(gameObject);
+        }    
+    }
 }
